@@ -1,0 +1,13 @@
+{
+	"name": "@business-management/tailwind",
+	"version": "0.0.0",
+	"private": true,
+	"files": ["base.css"],
+	"scripts": {
+		"clean": "git clean -xdf node_modules"
+	},
+	"dependencies": {
+		"tailwindcss": "catalog:",
+		"tailwindcss-animate": "catalog:"
+	}
+}

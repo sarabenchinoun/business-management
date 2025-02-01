@@ -8,7 +8,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": [".next"]
+		"ignore": [".next", "dist", ".sanity"]
 	},
 	"formatter": {
 		"enabled": true,

@@ -1,30 +1,27 @@
 {
-	"name": "@business-management/web",
+	"name": "@business-management/ui",
 	"version": "0.0.0",
 	"private": true,
+	"exports": {
+		"./icon": "./src/icon.tsx",
+		"./utils": "./src/utils.ts"
+	},
 	"scripts": {
-		"build": "next build",
-		"dev": "next dev --turbopack",
-		"lint": "next lint",
-		"start": "next start",
+		"clean": "git clean -xdf node_modules",
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@base-ui-components/react": "catalog:",
-		"@business-management/ui": "workspace:*",
-		"next": "catalog:",
+		"@phosphor-icons/react": "catalog:",
 		"react": "catalog:",
 		"react-dom": "catalog:"
 	},
 	"devDependencies": {
 		"@business-management/tailwind": "workspace:*",
 		"@business-management/typescript": "workspace:*",
-		"@tailwindcss/postcss": "catalog:",
-		"@types/node": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
-		"postcss": "catalog:",
-		"tailwindcss": "catalog:",
+		"clsx": "catalog:",
+		"tailwind-merge": "catalog:",
 		"typescript": "catalog:"
 	},
 	"packageManager": "pnpm@9.15.4",

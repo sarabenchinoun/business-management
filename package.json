@@ -14,6 +14,7 @@
 		"lint:fix": "biome check --write",
 		"typecheck": "turbo typecheck",
 		"typecheck:cms": "turbo @business-management/cms#typecheck",
+		"typecheck:ui": "turbo @business-management/ui#typecheck",
 		"typecheck:web": "turbo @business-management/web#typecheck",
 		"update-deps": "taze -I -r",
 		"validate": "turbo lint typecheck build"
