@@ -1,10 +1,27 @@
 {
 	"name": "@business-management/core",
 	"version": "1.0.0",
-	"scripts": {},
 	"author": "Sara Benchinoun",
+	"scripts": {
+		"build": "turbo build",
+		"build:web": "turbo @business-management/web#build",
+		"clean": "git clean -xdf node_modules",
+		"dev": "turbo dev",
+		"dev:web": "turbo @business-management/web#dev",
+		"lint": "biome check",
+		"lint:fix": "biome check --write",
+		"typecheck": "turbo typecheck",
+		"typecheck:web": "turbo @business-management/web#typecheck",
+		"update-deps": "taze -I -r",
+		"validate": "turbo lint typecheck build"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
+		"taze": "catalog:",
 		"turbo": "catalog:"
+	},
+	"packageManager": "pnpm@9.15.4",
+	"engines": {
+		"node": ">=22"
 	}
 }
