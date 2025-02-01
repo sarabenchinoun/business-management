@@ -9,4 +9,7 @@ const EnvSchema = z.object({
 	}),
 });
 
-export const env = EnvSchema.parse(process.env);
+export const env = EnvSchema.parse({
+	sanityProjectId: process.env.SANITY_STUDIO_PROJECT_ID,
+	sanityDataset: process.env.SANITY_STUDIO_DATASET,
+});

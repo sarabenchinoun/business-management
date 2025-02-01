@@ -4,13 +4,16 @@
 	"author": "Sara Benchinoun",
 	"scripts": {
 		"build": "turbo build",
+		"build:cms": "turbo @business-management/cms#build",
 		"build:web": "turbo @business-management/web#build",
 		"clean": "git clean -xdf node_modules",
 		"dev": "turbo dev",
+		"dev:cms": "turbo @business-management/cms#dev",
 		"dev:web": "turbo @business-management/web#dev",
 		"lint": "biome check",
 		"lint:fix": "biome check --write",
 		"typecheck": "turbo typecheck",
+		"typecheck:cms": "turbo @business-management/cms#typecheck",
 		"typecheck:web": "turbo @business-management/web#typecheck",
 		"update-deps": "taze -I -r",
 		"validate": "turbo lint typecheck build"
