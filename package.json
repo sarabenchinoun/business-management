@@ -1,0 +1,10 @@
+{
+	"name": "@business-management/core",
+	"version": "1.0.0",
+	"scripts": {},
+	"author": "Sara Benchinoun",
+	"devDependencies": {
+		"@biomejs/biome": "catalog:",
+		"turbo": "catalog:"
+	}
+}

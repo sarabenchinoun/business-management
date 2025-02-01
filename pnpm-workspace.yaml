@@ -1,0 +1,5 @@
+packages:
+  - "apps/*"
+catalog:
+  "@biomejs/biome": ^1.9.4
+  turbo: ^2.4.0
