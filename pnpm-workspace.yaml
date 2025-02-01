@@ -16,3 +16,4 @@ catalog:
   taze: ^18.3.0
   turbo: ^2.4.0
   typescript: ^5.7.3
+  zod: ^3.24.1
