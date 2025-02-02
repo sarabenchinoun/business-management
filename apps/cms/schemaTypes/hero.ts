@@ -13,8 +13,9 @@ export const hero = defineType({
 		}),
 		defineField({
 			name: "subtitle",
-			type: "string",
+			type: "text",
 			title: "Subtitle",
+			rows: 3,
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({

@@ -2,6 +2,7 @@
 	"name": "@business-management/core",
 	"version": "1.0.0",
 	"author": "Sara Benchinoun",
+	"type": "module",
 	"scripts": {
 		"build": "turbo build",
 		"build:cms": "turbo @business-management/cms#build",
@@ -12,6 +13,7 @@
 		"dev:web": "turbo @business-management/web#dev",
 		"lint": "biome check",
 		"lint:fix": "biome check --write",
+		"sanity:typegen": "pnpm --filter cms typegen",
 		"typecheck": "turbo typecheck",
 		"typecheck:cms": "turbo @business-management/cms#typecheck",
 		"typecheck:ui": "turbo @business-management/ui#typecheck",

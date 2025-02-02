@@ -12,11 +12,16 @@
 	"dependencies": {
 		"@base-ui-components/react": "catalog:",
 		"@business-management/ui": "workspace:*",
+		"@sanity/image-url": "catalog:",
+		"groqd": "catalog:",
 		"next": "catalog:",
+		"next-sanity": "catalog:",
 		"react": "catalog:",
-		"react-dom": "catalog:"
+		"react-dom": "catalog:",
+		"zod": "catalog:"
 	},
 	"devDependencies": {
+		"@business-management/sanity": "workspace:*",
 		"@business-management/tailwind": "workspace:*",
 		"@business-management/typescript": "workspace:*",
 		"@tailwindcss/postcss": "catalog:",

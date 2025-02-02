@@ -1,0 +1,21 @@
+{
+	"name": "@business-management/sanity",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/types.ts"
+	},
+	"scripts": {
+		"clean": "git clean -xdf node_modules",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@business-management/typescript": "workspace:*",
+		"typescript": "catalog:"
+	},
+	"packageManager": "pnpm@9.15.4",
+	"engines": {
+		"node": ">=22"
+	}
+}
