@@ -26,6 +26,7 @@
 					"level": "warn",
 					"fix": "safe",
 					"options": {
+						// This is to make sure I get class sorting on my class helper functions
 						"functions": ["cn", "tv"]
 					}
 				}
