@@ -15,7 +15,7 @@
 		"react": "catalog:",
 		"react-dom": "catalog:",
 		"sanity": "catalog:",
-		"styled-components": "^6.1.14",
+		"styled-components": "^6.1.15",
 		"zod": "catalog:"
 	},
 	"devDependencies": {
@@ -24,7 +24,7 @@
 		"@types/react-dom": "catalog:",
 		"typescript": "catalog:"
 	},
-	"packageManager": "pnpm@9.15.4",
+	"packageManager": "pnpm@10.2.1",
 	"engines": {
 		"node": ">=22"
 	}

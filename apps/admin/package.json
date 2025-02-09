@@ -1,0 +1,35 @@
+{
+	"name": "@business-management/admin",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite --port=3001",
+		"serve": "vite preview",
+		"start": "vite",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "catalog:",
+		"@tanstack/react-router": "catalog:",
+		"@tanstack/router-devtools": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:",
+		"tailwindcss": "catalog:"
+	},
+	"devDependencies": {
+		"@business-management/tailwind": "workspace:*",
+		"@business-management/typescript": "workspace:*",
+		"@tanstack/router-plugin": "catalog:",
+		"@types/react": "catalog:",
+		"@types/react-dom": "catalog:",
+		"@vitejs/plugin-react-swc": "catalog:",
+		"vite": "catalog:",
+		"vite-tsconfig-paths": "catalog:"
+	},
+	"packageManager": "pnpm@9.15.5",
+	"engines": {
+		"node": ">=22"
+	}
+}

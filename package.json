@@ -5,10 +5,12 @@
 	"type": "module",
 	"scripts": {
 		"build": "turbo build",
+		"build:admin": "turbo @business-management/admin#build",
 		"build:cms": "turbo @business-management/cms#build",
 		"build:web": "turbo @business-management/web#build",
 		"clean": "git clean -xdf node_modules",
 		"dev": "turbo dev",
+		"dev:admin": "turbo @business-management/admin#dev",
 		"dev:cms": "turbo @business-management/cms#dev",
 		"dev:web": "turbo @business-management/web#dev",
 		"lint": "biome check",
@@ -26,7 +28,7 @@
 		"taze": "catalog:",
 		"turbo": "catalog:"
 	},
-	"packageManager": "pnpm@9.15.4",
+	"packageManager": "pnpm@9.15.5",
 	"engines": {
 		"node": ">=22"
 	}
