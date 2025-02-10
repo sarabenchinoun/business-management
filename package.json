@@ -28,7 +28,7 @@
 		"taze": "catalog:",
 		"turbo": "catalog:"
 	},
-	"packageManager": "pnpm@9.15.5",
+	"packageManager": "pnpm@9.15.4",
 	"engines": {
 		"node": ">=22"
 	}
