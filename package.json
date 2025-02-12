@@ -4,15 +4,14 @@
 	"author": "Sara Benchinoun",
 	"type": "module",
 	"scripts": {
+		"admin:build": "turbo @business-management/admin#build",
+		"admin:dev": "turbo @business-management/admin#dev",
+		"admin:dev:mock": "turbo @business-management/admin#dev:mock",
 		"build": "turbo build",
-		"build:admin": "turbo @business-management/admin#build",
-		"build:cms": "turbo @business-management/cms#build",
-		"build:web": "turbo @business-management/web#build",
 		"clean": "git clean -xdf node_modules",
+		"cms:build": "turbo @business-management/cms#build",
+		"cms:dev": "turbo @business-management/cms#dev",
 		"dev": "turbo dev",
-		"dev:admin": "turbo @business-management/admin#dev",
-		"dev:cms": "turbo @business-management/cms#dev",
-		"dev:web": "turbo @business-management/web#dev",
 		"lint": "biome check",
 		"lint:fix": "biome check --write",
 		"sanity:typegen": "pnpm --filter cms typegen",
@@ -21,7 +20,9 @@
 		"typecheck:ui": "turbo @business-management/ui#typecheck",
 		"typecheck:web": "turbo @business-management/web#typecheck",
 		"update-deps": "taze -I -r",
-		"validate": "turbo lint typecheck build"
+		"validate": "turbo lint typecheck build",
+		"web:build": "turbo @business-management/web#build",
+		"web:dev": "turbo @business-management/web#dev"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
@@ -31,5 +32,8 @@
 	"packageManager": "pnpm@9.15.4",
 	"engines": {
 		"node": ">=22"
+	},
+	"msw": {
+		"workerDirectory": ["apps/admin/public"]
 	}
 }

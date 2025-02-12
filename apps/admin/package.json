@@ -6,6 +6,7 @@
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite --port=3001",
+		"dev:mock": "vite --mode mock",
 		"serve": "vite preview",
 		"start": "vite",
 		"typecheck": "tsc --noEmit"
@@ -25,6 +26,7 @@
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
 		"@vitejs/plugin-react-swc": "catalog:",
+		"msw": "catalog:",
 		"vite": "catalog:",
 		"vite-tsconfig-paths": "catalog:"
 	},

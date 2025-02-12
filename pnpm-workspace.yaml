@@ -18,6 +18,7 @@ catalog:
   "@vitejs/plugin-react-swc": ^3.8.0
   clsx: ^2.1.1
   groqd: ^1.0.6
+  msw: ^2.7.0
   next-sanity: ^9.8.54
   next: ^15.1.6
   postcss: ^8.5.1
