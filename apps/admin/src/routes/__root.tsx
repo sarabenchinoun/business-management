@@ -1,3 +1,4 @@
+import { formatDate } from "@/utils/format-date";
 import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 
@@ -24,19 +25,24 @@ function RootComponent() {
 				>
 					Home
 				</Link>{" "}
-				<Link
-					to="/about"
-					activeProps={{
-						className: "font-bold",
-					}}
-				>
-					About
-				</Link>
 			</div>
 			<hr />
 			<h1>Account</h1>
-			<p>{account.name}</p>
-			<p>{account.email}</p>
+			<p>
+				<strong>Name:</strong> {account.name}
+			</p>
+			<p>
+				<strong>Email:</strong> {account.email}
+			</p>
+			<p>
+				<strong>Role:</strong> {account.role}
+			</p>
+			<p>
+				<strong>Created At:</strong> {formatDate(account.created_at)}
+			</p>
+			<p>
+				<strong>Updated At:</strong> {formatDate(account.updated_at)}
+			</p>
 			<hr />
 			<Outlet />
 			<TanStackRouterDevtools position="bottom-right" />

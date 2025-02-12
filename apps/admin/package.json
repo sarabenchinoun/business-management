@@ -9,6 +9,9 @@
 		"dev:mock": "vite --mode mock",
 		"serve": "vite preview",
 		"start": "vite",
+		"test": "vitest",
+		"test:coverage": "vitest run --coverage",
+		"test:ui": "vitest --ui --coverage.enabled=true",
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
@@ -22,13 +25,17 @@
 	"devDependencies": {
 		"@business-management/tailwind": "workspace:*",
 		"@business-management/typescript": "workspace:*",
+		"@faker-js/faker": "catalog:",
 		"@tanstack/router-plugin": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
 		"@vitejs/plugin-react-swc": "catalog:",
+		"@vitest/coverage-v8": "catalog:",
+		"@vitest/ui": "catalog:",
 		"msw": "catalog:",
 		"vite": "catalog:",
-		"vite-tsconfig-paths": "catalog:"
+		"vite-tsconfig-paths": "catalog:",
+		"vitest": "catalog:"
 	},
 	"packageManager": "pnpm@9.15.4",
 	"engines": {

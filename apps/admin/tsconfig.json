@@ -2,11 +2,6 @@
 	"extends": "@business-management/typescript/base.json",
 	"compilerOptions": {
 		"jsx": "react-jsx",
-		"plugins": [
-			{
-				"name": "next"
-			}
-		],
 		// I added this line to store tsbuildinfo file in node_modules/.cache to keep project root clean and avoid VCS conflicts.
 		"tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
 		"paths": {
