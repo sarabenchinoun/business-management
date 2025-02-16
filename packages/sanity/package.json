@@ -14,7 +14,7 @@
 		"@business-management/typescript": "workspace:*",
 		"typescript": "catalog:"
 	},
-	"packageManager": "pnpm@9.15.5",
+	"packageManager": "pnpm@10.4.0",
 	"engines": {
 		"node": ">=22"
 	}
