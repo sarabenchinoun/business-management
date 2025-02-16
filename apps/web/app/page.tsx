@@ -183,7 +183,6 @@ export default async function Home() {
 					</div>
 				</div>
 
-				{/* Feature section */}
 				<div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
 					<div className="mx-auto max-w-2xl lg:text-center">
 						<h2 className="font-semibold text-base/7 text-indigo-600">
@@ -221,7 +220,6 @@ export default async function Home() {
 					</div>
 				</div>
 
-				{/* Testimonial section */}
 				<div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
 					<div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
 						<img
