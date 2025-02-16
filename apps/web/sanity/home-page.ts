@@ -8,7 +8,8 @@ export const homePageQuery = q.star
 	.project((sub) => ({
 		seo: true,
 		hero: sub.field("hero").project(heroFragment),
-	}));
+	}))
+	.notNull();
 
 export function getHomePage() {
 	return runQuery(homePageQuery);

@@ -8,7 +8,15 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": [".next", "dist", ".sanity", "types.ts", "routeTree.gen.ts"]
+		"ignore": [
+			"**/.next",
+			"**/dist",
+			"**/.sanity",
+			"**/sanity/src/types.ts",
+			"**/routeTree.gen.ts",
+			"**/coverage",
+			"**/mockServiceWorker.js"
+		]
 	},
 	"formatter": {
 		"enabled": true,

@@ -10,6 +10,7 @@
 		"admin:test": "turbo @business-management/admin#test",
 		"admin:test:coverage": "turbo @business-management/admin#test:coverage",
 		"admin:test:ui": "turbo @business-management/admin#test:ui",
+		"admin:typecheck": "turbo @business-management/admin#typecheck",
 		"build": "turbo build",
 		"clean": "git clean -xdf node_modules",
 		"cms:build": "turbo @business-management/cms#build",
@@ -21,18 +22,18 @@
 		"typecheck": "turbo typecheck",
 		"typecheck:cms": "turbo @business-management/cms#typecheck",
 		"typecheck:ui": "turbo @business-management/ui#typecheck",
-		"typecheck:web": "turbo @business-management/web#typecheck",
 		"update-deps": "taze -I -r",
 		"validate": "turbo lint typecheck build",
 		"web:build": "turbo @business-management/web#build",
-		"web:dev": "turbo @business-management/web#dev"
+		"web:dev": "turbo @business-management/web#dev",
+		"web:typecheck": "turbo @business-management/web#typecheck"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
 		"taze": "catalog:",
 		"turbo": "catalog:"
 	},
-	"packageManager": "pnpm@9.15.4",
+	"packageManager": "pnpm@9.15.5",
 	"engines": {
 		"node": ">=22"
 	},
